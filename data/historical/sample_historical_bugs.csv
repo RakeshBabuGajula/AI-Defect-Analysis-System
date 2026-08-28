@@ -1,0 +1,7 @@
+bug_id,source,title,description,component,severity,status,resolution
+MOZ-1001,Mozilla,Application crashes during login,Application crashes after entering valid credentials,Authentication,High,Resolved,Fixed
+MOZ-1002,Mozilla,Firefox freezes when opening settings,Browser becomes unresponsive when settings page is opened,Preferences,Medium,Resolved,Fixed
+ECL-2001,Eclipse,Null pointer exception in editor,Editor crashes when opening a Java file,Java Editor,High,Resolved,Fixed
+ECL-2002,Eclipse,Build process fails unexpectedly,Project compilation fails after dependency update,Build,High,Resolved,Fixed
+APR-3001,Apache,Server crashes during request processing,Server terminates unexpectedly under concurrent requests,Server,Critical,Resolved,Fixed
+APR-3002,Apache,Authentication request fails,User authentication returns an unexpected error,Authentication,High,Resolved,Fixed

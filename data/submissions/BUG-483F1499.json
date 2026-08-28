@@ -1,0 +1,12 @@
+{
+    "submission_id": "BUG-483F1499",
+    "submitted_at": "2026-08-27T15:20:21.681973",
+    "bug_title": "Application crashes during user login",
+    "bug_description": "The application crashes when a user enters valid\ncredentials and clicks the Login button.\n\nExpected behavior:\nThe user should be successfully authenticated and\nredirected to the dashboard.\n\nActual behavior:\nThe application crashes immediately after clicking Login.",
+    "severity": "High",
+    "affected_component": "Authentication Service",
+    "stack_trace": "java.lang.NullPointerException\n\nat com.example.auth.LoginService.authenticate(LoginService.java:42)\nat com.example.auth.LoginController.login(LoginController.java:28)\nat com.example.api.AuthEndpoint.handle(AuthEndpoint.java:15)",
+    "error_logs": "2026-08-27 14:30:21 ERROR Authentication request failed\n2026-08-27 14:30:21 ERROR NullPointerException in LoginService\n2026-08-27 14:30:21 ERROR User authentication terminated",
+    "uploaded_file": "sample_bug.log",
+    "uploaded_content": "ERROR: Authentication service failed\r\n\r\nException:\r\njava.lang.NullPointerException\r\n\r\nComponent:\r\nLoginService\r\n\r\nUser authentication request terminated unexpectedly."
+}

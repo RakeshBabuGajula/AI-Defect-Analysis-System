@@ -1,0 +1,9 @@
+ERROR: Authentication service failed
+
+Exception:
+java.lang.NullPointerException
+
+Component:
+LoginService
+
+User authentication request terminated unexpectedly.

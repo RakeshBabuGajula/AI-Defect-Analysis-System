@@ -1,0 +1,47 @@
+# Environment Variables (SECRETS)
+.env
+*.env
+
+# Python Virtual Environment
+venv/
+env/
+ENV/
+venv*/
+.venv/
+
+# Large Generated Datasets, Vector DBs, Embeddings, and Chunks
+data/vector_db/
+data/processed/
+data/historical/*.csv
+data/historical/*/*.csv
+data/historical/*/*/*.csv
+data/submissions/historical/
+*.sqlite3
+*.bin
+*.jsonl
+
+# Keep small sample files
+!data/historical/sample_historical_bugs.csv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.dll
+*.so
+*.lib
+
+# Streamlit
+.streamlit/
+*.port
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
