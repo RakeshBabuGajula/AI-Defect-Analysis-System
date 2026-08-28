@@ -4,8 +4,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 import google.generativeai as genai
 
-from rag.retriever import retrieve_similar_bugs
-from rag.context_builder import build_rag_context
+from knowledge_base.rag.retriever import retrieve_similar_bugs
+from knowledge_base.rag.context_builder import build_rag_context
 
 
 # =========================================================
