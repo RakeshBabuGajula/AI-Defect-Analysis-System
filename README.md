@@ -95,6 +95,12 @@ By indexing **4,125 real-world historical defect vectors** across major open-sou
                                │  (Streamlit / JSON Export)  │
                                └─────────────────────────────┘
 ```
+## 📸 Application Screenshots
+<img width="1918" height="1144" alt="image" src="https://github.com/user-attachments/assets/9e9148f1-7f1f-4978-90dd-5d519e54b4b5" />
+<img width="1917" height="1144" alt="image" src="https://github.com/user-attachments/assets/30b8fb76-cbf2-4923-b798-f2d66c3e53f4" />
+<img width="1917" height="1140" alt="image" src="https://github.com/user-attachments/assets/d3c3ac03-efe0-462a-96b3-74ad35bb8555" />
+<img width="1918" height="1135" alt="image" src="https://github.com/user-attachments/assets/6505a6bd-49cf-4c68-a907-568849e62711" />
+
 
 ---
 
