@@ -109,6 +109,8 @@ By indexing **4,125 real-world historical defect vectors** across major open-sou
 ```text
 AI-Defect-Analysis-System/
 ├── .env                                         # Environment configuration (GEMINI_API_KEY)
+├── LICENSE                                      # MIT Software License
+├── README.md                                    # Project documentation & execution guide
 ├── requirements.txt                             # Python dependencies
 ├── sample_bug.log                               # Sample stack trace log file
 │
@@ -137,11 +139,16 @@ AI-Defect-Analysis-System/
 │   │   ├── __init__.py
 │   │   ├── retriever.py                         # ChromaDB Vector Retriever Module
 │   │   └── context_builder.py                   # RAG Context Formatter
-│   ├── build_balanced_vector_database.py        # Balanced Vector DB Builder Script
-│   ├── create_balanced_dataset.py               # Dataset Sampler (Apache, Eclipse, Mozilla)
+│   ├── standardize_apache.py                    # Apache Bugzilla Dataset Normalizer
+│   ├── standardize_eclipse.py                   # Eclipse Issue Tracker Normalizer
+│   ├── standardize_mozilla.py                   # Mozilla Bugzilla Normalizer
+│   ├── combine_datasets.py                      # Unified Dataset Combiner
+│   ├── clean_dataset.py                         # Data Cleaning & Deduplication Script
+│   ├── create_balanced_dataset.py               # Balanced Dataset Sampler (Apache, Eclipse, Mozilla)
 │   ├── create_balanced_chunks.py                # 2000-char Sliding Window Chunking Script
 │   ├── generate_balanced_embeddings.py          # SentenceTransformer Vector Embedder
-│   └── balanced_semantic_search.py              # Vector DB Query Test Script
+│   ├── build_balanced_vector_database.py        # ChromaDB Vector Store Builder Script
+│   └── balanced_semantic_search.py              # Vector DB Retrieval Test Script
 │
 ├── data/                                        # Datasets & Vector Storage
 │   ├── historical/                              # Standardized Raw Defect Datasets
