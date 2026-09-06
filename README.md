@@ -150,6 +150,10 @@ AI-Defect-Analysis-System/
 │   │   └── embeddings/                          # JSONL Embeddings (balanced_bug_embeddings.jsonl)
 │   └── vector_db/                               # ChromaDB Store (historical_defects_balanced)
 │
+├── docs/                                        # Documentation & Specifications
+│   ├── AI-DEFECT-ANALYSIS-SYSTEM.docx           # Complete Technical & System Architecture Document
+│   └── dataset_sources.md                       # Dataset Provenance & Data Schema Guide
+│
 └── tests/                                       # Comprehensive Test Suite
     ├── test_agent_orchestrator.py               # 5-Agent End-to-End Orchestration Test
     ├── test_triage_agent.py                     # Triage Agent Test
@@ -157,7 +161,9 @@ AI-Defect-Analysis-System/
     ├── test_log_analysis_no_logs.py             # Log Analysis (No-Logs Scenario Test)
     ├── test_log_analysis_stacktrace.py          # Log Analysis (Stack-Trace Test)
     ├── test_root_cause_agent.py                 # Root Cause Agent Test
-    └── test_remediation_agent.py                # Remediation Agent Test
+    ├── test_remediation_agent.py                # Remediation Agent Test
+    ├── test_defect_analyzer.py                  # Standalone LLM Analyzer Test
+    └── test_rag_retrieval.py                    # RAG Retrieval Integration Test
 ```
 
 ---
