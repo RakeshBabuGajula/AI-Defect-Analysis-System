@@ -179,7 +179,7 @@ Clone the repository and set up a Python virtual environment:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/AI-Defect-Analysis-System.git
+git clone https://github.com/RakeshBabuGajula/AI-Defect-Analysis-System.git
 cd AI-Defect-Analysis-System
 
 # Create virtual environment
@@ -206,7 +206,7 @@ If rebuilding the ChromaDB vector database from raw datasets:
 
 ```bash
 # Set PYTHONPATH and execute vector database build
-$env:PYTHONPATH=".;knowledge_base"
+$env:PYTHONPATH="."
 python knowledge_base/build_balanced_vector_database.py
 ```
 
@@ -225,18 +225,24 @@ Open your browser at `http://localhost:8501`.
 Run the automated test suite to verify agent functionality:
 
 ```bash
-# Set PYTHONPATH for local module resolution
-$env:PYTHONPATH=".;knowledge_base"
+# Set PYTHONPATH for local module resolution (Windows PowerShell)
+$env:PYTHONPATH="."
+
+# Linux / macOS:
+# export PYTHONPATH="."
 
 # Run complete 5-Agent Orchestrator Test
 python tests/test_agent_orchestrator.py
 
-# Run individual agent tests
+# Run individual agent & system tests
 python tests/test_triage_agent.py
 python tests/test_duplicate_detection.py
 python tests/test_log_analysis_stacktrace.py
+python tests/test_log_analysis_no_logs.py
 python tests/test_root_cause_agent.py
 python tests/test_remediation_agent.py
+python tests/test_defect_analyzer.py
+python tests/test_rag_retrieval.py
 ```
 
 ---
